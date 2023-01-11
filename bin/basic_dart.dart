@@ -40,24 +40,30 @@ void main() {
 
   ///loopsaressameasc++
   ///arrayisnotindart---itislist--
-  var array = [1, 2, 3, 'name']; //arrayofdynamic
-  List<int> numberlist = [
-    1,
-    2,
-    3,
-    6,
-  ];
-  print(numberlist.length);
-  if (numberlist.contains(3)) {
-    print('list has 3');
+  // var array = [1, 2, 3, 'name']; //arrayofdynamic
+  // List<int> numberlist = [
+  //   1,
+  //   2,
+  //   3,
+  //   6,
+  // ];
+  // print(numberlist.length);
+  // if (numberlist.contains(3)) {
+  //   print('list has 3');
 
-    ///containsfunctiontocheckelement
+  //   ///containsfunctiontocheckelement
 
-  }
-  var newlist = [45, 56];
-  numberlist.add(13); //toaddnewvaluetoarray
-  numberlist.removeAt(1); //toremovefromarrayataposition
-  numberlist.addAll(newlist); //functiontoaddnewarraytoanotherarray
-  print(numberlist.join(":")); //joinfunctiontoptintthedelimiterwewant
-  print(numberlist); //arrayprintexactly
+  // }
+  // var newlist = [45, 56];
+  // numberlist.add(13); //toaddnewvaluetoarray
+  // numberlist.removeAt(1); //toremovefromarrayataposition
+  // numberlist.addAll(newlist); //functiontoaddnewarraytoanotherarray
+  // print(numberlist.join(":")); //joinfunctiontoptintthedelimiterwewant
+  // print(numberlist); //arrayprintexactly
+  sumReq(num1: 30, num2: 50, num3: 4);
 }
+
+void sumReq({required int num1, required int num2, int? num3}) {
+  print(num1 + num2);
+}
+/// required should be written first optional should be written last  ?-to define non null
