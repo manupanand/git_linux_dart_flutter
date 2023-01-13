@@ -1,6 +1,13 @@
 import 'dart:convert';
 import 'dart:io';
 
+class Person {
+  //classisdeclaredoutsidemainifnotassignvariablevalueitwillassignnullbydefaul?isgiven
+//fornullcheck//stringname=somevalue
+  String? name;
+  int? age;
+}
+
 void main() {
   // print("Hello manu");//to commentin datrt
   // var a = stdin.readLineSync();
@@ -60,10 +67,15 @@ void main() {
   // numberlist.addAll(newlist); //functiontoaddnewarraytoanotherarray
   // print(numberlist.join(":")); //joinfunctiontoptintthedelimiterwewant
   // print(numberlist); //arrayprintexactly
-  sumReq(num1: 30, num2: 50, num3: 4);
+  // sumReq(num1: 30, num2: 50, num3: 4);
+  final person = Person();
+  person.name = 'manu'; //assignvaluetoperson
+  print(person);
 }
 
-void sumReq({required int num1, required int num2, int? num3}) {
-  print(num1 + num2);
-}
+//namedparameters
+// void sumReq({required int num1, required int num2, int? num3}) {
+//   print(num1 + num2);
+// }
+
 /// required should be written first optional should be written last  ?-to define non null
